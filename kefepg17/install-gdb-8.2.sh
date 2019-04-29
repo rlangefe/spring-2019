@@ -45,9 +45,9 @@ cd $v
 # Build configure, make, and install gdb
 
 # install make and gcc8
-doit_nolog yum -y install make  
-doit_nolog yum -y install centos-release-scl
-doit_nolog yum -y install devtoolset-8-gcc devtoolset-8-gcc-c++
+doit install-make.out yum -y install make
+doit install-centos-release-scl.out yum -y install centos-release-scl
+doit install-other-stuff.out yum -y install devtoolset-8-gcc devtoolset-8-gcc-c++
 source /opt/rh/devtoolset-8/enable
 
 # symlink makeinfo to a no-op to avoid problems with documentation generation
@@ -59,7 +59,7 @@ echo "=== Configuring gdb $ver..."
 doit config.out ./configure \
     --prefix=$prefix
 echo "=== Making gdb $ver..."
-doit make.out make -j 4 
+doit make.out make -j 4
 echo "=== Installing gdb $ver..."
 doit makeinstall.out make install
 
