@@ -54,7 +54,6 @@ if $IS_UBUNTU; then
 else
     source ./scripts/centos-server-install.sh
 fi
-fi
 
 # Install & upgrade python modules
 if $IS_UBUNTU; then
