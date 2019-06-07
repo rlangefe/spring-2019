@@ -19,6 +19,18 @@ git-extras
 graphviz
 ImageMagick
 wget
+zlib-devel
+sqlite-devel
+openssl-devel
+libffi-devel
+readline-devel
+ncurses-devel
+gdbm-devel
+xz-devel
+tkinter
+uuid-devel
+bzip2-devel
+environment-modules
 "
 
 # Packages to install on Ubuntu only.
