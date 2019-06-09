@@ -63,9 +63,13 @@ python-setuptools
 
 # Install all software first.
 if $IS_UBUNTU; then
-    source ./scripts/ubuntu-server-install.sh
+    sudo apt update -y
+    sudo apt install -y $COMMON_SERVER_PACKAGES
+    sudo apt install -y $UBUNTU_SERVER_PACKAGES
 else
-    source ./scripts/centos-server-install.sh
+    sudo yum update -y
+    sudo yum install -y $COMMON_SERVER_PACKAGES
+    sudo yum install -y $CENTOS_SERVER_PACKAGES
 fi
 
 # Install & upgrade python modules
