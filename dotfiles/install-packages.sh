@@ -17,7 +17,6 @@ emacs
 git
 git-extras
 graphviz
-ImageMagick
 wget
 zlib-devel
 sqlite-devel
@@ -35,6 +34,7 @@ environment-modules
 
 # Packages to install on Ubuntu only.
 UBUNTU_SERVER_PACKAGES="
+imagemagick
 python-dev
 python-pip
 "
@@ -42,6 +42,7 @@ python-pip
 # Packages to install on Centos only.
 CENTOS_SERVER_PACKAGES="
 epel-release
+ImageMagick
 python-devel
 python-pip
 "
