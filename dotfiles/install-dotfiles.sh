@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Ask for the administrator password upfront.
-sudo -v
-
 if [ -n "$(uname -a | grep Ubuntu)" ]; then
     IS_UBUNTU=true
 else
